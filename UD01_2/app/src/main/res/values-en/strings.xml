@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UD01_2</string>
+    <string name="elige_un_animal">Choose an animal</string>
+    <string name="enviar">Send</string>
+
+    <string-array name="lista">
+        <item>Horse</item>
+        <item>Dog</item>
+        <item>Camel</item>
+    </string-array>
+</resources>

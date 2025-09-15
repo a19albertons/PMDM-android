@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UD01_2</string>
+    <string name="elige_un_animal">Elige un animal</string>
+    <string name="enviar">Enviar</string>
+
+    <string-array name="lista">
+        <item>Caballo</item>
+        <item>Perro</item>
+        <item>Camello</item>
+    </string-array>
+</resources>
