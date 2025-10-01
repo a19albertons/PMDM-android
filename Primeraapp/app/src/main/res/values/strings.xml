@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Primera app</string>
+    <string name="hola_soy_tunombre_y_esta_es_mi_primera_app_en_android">!Hola, soy [TuNombre] y esta es mi primera app en Android</string>
+</resources>
