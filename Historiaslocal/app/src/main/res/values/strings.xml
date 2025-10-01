@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Historias local</string>
+    <string name="pulsa_el_boton_para_generar_una_hisotria">Pulsa el boton para generar una hisotria!</string>
+    <string name="generar_hisotoria">Generar hisotoria</string>
+</resources>
