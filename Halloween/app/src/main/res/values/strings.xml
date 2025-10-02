@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Halloween</string>
+    <string name="introduce_tu_nombre">Introduce tu nombre</string>
+    <string name="introduce_tu_nombre_aqui">Introduce tu nombre aqui</string>
+    <string name="siguiente">Siguiente</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="seleccione_una_tematica">Seleccione una tematica</string>
+    <string name="casa_encantada">Casa Encantada</string>
+    <string name="bosque_malvado">Bosque Malvado</string>
+    <string name="mansion_misteriosa">Mansion Misteriosa</string>
+</resources>

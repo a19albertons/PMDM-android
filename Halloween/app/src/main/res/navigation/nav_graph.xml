@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/pantalla1">
+    <fragment
+        android:id="@+id/pantalla1"
+        android:name="com.example.halloween.Pantalla1"
+        android:label="fragment_pantalla1"
+        tools:layout="@layout/fragment_pantalla1" >
+        <action
+            android:id="@+id/action_pantalla1_to_pantalla2"
+            app:destination="@id/pantalla2" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantalla2"
+        android:name="com.example.halloween.Pantalla2"
+        android:label="fragment_pantalla2"
+        tools:layout="@layout/fragment_pantalla2" >
+        <action
+            android:id="@+id/action_pantalla2_to_casaEncantada"
+            app:destination="@id/casaEncantada" />
+        <argument
+            android:name="Nombre"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_pantalla2_to_bosqueMaldito"
+            app:destination="@id/bosqueMaldito" />
+        <action
+            android:id="@+id/action_pantalla2_to_mansionMisteriosa"
+            app:destination="@id/mansionMisteriosa" />
+    </fragment>
+    <fragment
+        android:id="@+id/casaEncantada"
+        android:name="com.example.halloween.CasaEncantada"
+        android:label="fragment_casa_encantada"
+        tools:layout="@layout/fragment_casa_encantada" >
+        <argument
+            android:name="Nombre"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/bosqueMaldito"
+        android:name="com.example.halloween.BosqueMaldito"
+        android:label="BosqueMaldito" >
+        <argument
+            android:name="Nombre"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/mansionMisteriosa"
+        android:name="com.example.halloween.MansionMisteriosa"
+        android:label="fragment_mansion_misteriosa"
+        tools:layout="@layout/fragment_mansion_misteriosa" >
+        <argument
+            android:name="Nombre"
+            app:argType="string" />
+    </fragment>
+</navigation>
