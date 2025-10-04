@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/base">
+
+    <fragment
+        android:id="@+id/base"
+        android:name="com.example.space.Base"
+        android:label="fragment_base"
+        tools:layout="@layout/fragment_base" />
+    <fragment
+        android:id="@+id/planetasSistemaSolar"
+        android:name="com.example.space.PlanetasSistemaSolar"
+        android:label="fragment_planetas_sistema_solar"
+        tools:layout="@layout/fragment_planetas_sistema_solar" />
+    <fragment
+        android:id="@+id/estrellasConstelaciones"
+        android:name="com.example.space.EstrellasConstelaciones"
+        android:label="fragment_estrellas_constelaciones"
+        tools:layout="@layout/fragment_estrellas_constelaciones" />
+    <fragment
+        android:id="@+id/exploracionLunaMarte"
+        android:name="com.example.space.ExploracionLunaMarte"
+        android:label="fragment_exploracion_luna_marte"
+        tools:layout="@layout/fragment_exploracion_luna_marte" />
+    <fragment
+        android:id="@+id/tecnologiaEspacialMisionesFuturas"
+        android:name="com.example.space.TecnologiaEspacialMisionesFuturas"
+        android:label="fragment_tecnologia_espacial_misiones_futuras"
+        tools:layout="@layout/fragment_tecnologia_espacial_misiones_futuras" />
+    <fragment
+        android:id="@+id/ayuda"
+        android:name="com.example.space.Ayuda"
+        android:label="fragment_ayuda"
+        tools:layout="@layout/fragment_ayuda" />
+</navigation>

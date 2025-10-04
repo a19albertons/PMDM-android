@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ExploracionLunaMarte">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/rover"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Las misiones de los rovers marcianos son exploraciones robóticas de Marte, diseñadas para estudiar la superficie y la geología del planeta, y buscar indicios de vida pasada o presente. Entre las misiones más destacadas se encuentran los rovers Curiosity y Perseverance de la NASA, que analizan rocas, suelo y atmósfera, y envían datos e imágenes valiosos a la Tierra. Estas misiones ayudan a los científicos a comprender la historia de Marte y a evaluar su potencial para la exploración humana en el futuro."
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/perseverance"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Perseverance, activo desde 2021, explora el cráter Jezero en Marte. Su misión es buscar signos de vida pasada, recolectar muestras de suelo y roca, y probar nuevas tecnologías para futuras misiones humanas."/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/euclid"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Euclid es una misión reciente dedicada a la búsqueda y análisis de imágenes de Marte, contribuyendo a la exploración visual y científica del planeta rojo."/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:src="@drawable/mercurio"
+                android:layout_margin="10dp"/>
+            <ImageView
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:src="@drawable/venus"
+                android:layout_margin="10dp"/>
+            <ImageView
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:src="@drawable/tierra"
+                android:layout_margin="10dp"/>
+            <ImageView
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:src="@drawable/marte"
+                android:layout_margin="10dp"/>
+            <ImageView
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:src="@drawable/jupiter"
+                android:layout_margin="10dp"/>
+            <ImageView
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:src="@drawable/saturno"
+                android:layout_margin="10dp"/>
+            <ImageView
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:src="@drawable/urano"
+                android:layout_margin="10dp"/>
+            <ImageView
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:src="@drawable/neptuno"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
