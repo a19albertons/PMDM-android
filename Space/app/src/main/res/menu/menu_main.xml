@@ -4,10 +4,10 @@
 
     <item
         android:id="@+id/planetasSistemaSolar"
-        android:icon="@drawable/tierra"
+        android:icon="@drawable/tierrasvg"
         android:title="Planetas del Sistema Solar" />
     <item
         android:id="@+id/estrellasConstelaciones"
-        android:icon="@drawable/estrella"
+        android:icon="@drawable/estrellasvg"
         android:title="Estrellas y Constelaciones" />
 </menu>

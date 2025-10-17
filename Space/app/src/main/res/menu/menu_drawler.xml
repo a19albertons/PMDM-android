@@ -3,15 +3,15 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/planetasSistemaSolar"
-            android:icon="@drawable/tierra"
+            android:icon="@drawable/tierrasvg"
             android:title="Planetas del Sistema Solar" />
         <item
             android:id="@+id/estrellasConstelaciones"
-            android:icon="@drawable/estrella"
+            android:icon="@drawable/estrellasvg"
             android:title="Estrellas y Constelaciones" />
         <item
             android:id="@+id/exploracionLunaMarte"
-            android:icon="@drawable/marte"
+            android:icon="@drawable/martesvg"
             android:title="Exploración de la Luna y Marte" />
 
     </group>
