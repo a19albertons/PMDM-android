@@ -39,6 +39,9 @@
         <argument
             android:name="Nombre"
             app:argType="string" />
+        <action
+            android:id="@+id/action_casaEncantada_to_pantalla1"
+            app:destination="@id/pantalla1" />
     </fragment>
     <fragment
         android:id="@+id/bosqueMaldito"
@@ -47,6 +50,9 @@
         <argument
             android:name="Nombre"
             app:argType="string" />
+        <action
+            android:id="@+id/action_bosqueMaldito_to_pantalla1"
+            app:destination="@id/pantalla1" />
     </fragment>
     <fragment
         android:id="@+id/mansionMisteriosa"
@@ -56,5 +62,8 @@
         <argument
             android:name="Nombre"
             app:argType="string" />
+        <action
+            android:id="@+id/action_mansionMisteriosa_to_pantalla1"
+            app:destination="@id/pantalla1" />
     </fragment>
 </navigation>

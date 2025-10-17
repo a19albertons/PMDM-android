@@ -9,4 +9,13 @@
     <string name="casa_encantada">Casa Encantada</string>
     <string name="bosque_malvado">Bosque Malvado</string>
     <string name="mansion_misteriosa">Mansion Misteriosa</string>
+    <!-- Content descriptions for accessibility -->
+    <string name="desc_casa_encantada">Imagen de casa encantada</string>
+    <string name="desc_bosque_malvado">Imagen de bosque malvado</string>
+    <string name="desc_mansion_misteriosa">Imagen de mansion misteriosa</string>
+    <!-- Story texts with placeholder for the player's name -->
+    <string name="historia_casa_encantada">%1$s era una joven fascinada por las casa encantadas. Un día, escucho rumores sobre una mansion abandonada en el bosque, y decidio explorarla. Dentro de la casa, encontró un retrato de Isabella, la antigua propietaria que se parecia mucho a ella. Intrigada, investigo la historia de Isablella y descubrio que había desaparecido misteriosamente. Durante sus noches en la mansion, %1$s sintio la presencia de Isabella y tuvo un sueño en el que Isabella le entregaba una carta. La carata revelaba la verdad sobre su desaparicion</string>
+    <string name="historia_bosque_malvado">%1$s era una joven fascinada por los antiguos y prohibidos bosques. Un día, escuchó rumores sobre un claro maldito y brumoso en las profundidades del Bosque Malvado, y decidió explorarlo. Dentro del claro, envuelta en una niebla antinatural, encontró una talla de madera en descomposición de Isabella, la antigua guardabosques del lugar, que se parecía mucho a ella. Intrigada, investigó la historia de Isabella y descubrió que había desaparecido misteriosamente. Durante sus noches en el claro, %1$s sintió la presencia helada de Isabella y tuvo un sueño en el que Isabella le entregaba un rústico mapa tallado en corteza. El mapa revelaba la verdadera ruta de su desaparición y el oscuro secreto oculto en el corazón del bosque.</string>
+    <string name="historia_mansion_misteriosa">%1$s era una joven fascinada por las mansiones misteriosas. Un día, escuchó rumores sobre una antigua mansión abandonada en la colina, y decidió explorarla. Dentro de la mansión, encontró un diario encuadernado en cuero en la biblioteca secreta, que contenía las crónicas de Lord Blackwood, el antiguo dueño que se parecía mucho a ella. Intrigada, investigó la historia de Lord Blackwood y descubrió que había desaparecido misteriosamente. Durante sus noches en la mansión, %1$s sintió la presencia de Lord Blackwood y tuvo un sueño en el que el antiguo dueño le entregaba un medallón con un grabado oculto. El medallón revelaba la verdad sobre su desaparición y el tesoro escondido de la mansión.</string>
+    <string name="volver">Volver</string>
 </resources>

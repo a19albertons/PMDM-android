@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import androidx.cardview.widget.CardView
 import androidx.navigation.NavArgs
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.navArgs
@@ -20,17 +21,17 @@ class Pantalla2 : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_pantalla2, container, false)
-        val casaEncantada = view.findViewById<LinearLayout>(R.id.casaEncantadaLayout)
+        val casaEncantada = view.findViewById<CardView>(R.id.casaEncantadaLayout)
         casaEncantada.setOnClickListener {
             val nombre = Pantalla2Args.fromBundle(requireArguments()).nombre
             view.findNavController().navigate(Pantalla2Directions.actionPantalla2ToCasaEncantada(nombre))
         }
-        val bosqueMaldito = view.findViewById<LinearLayout>(R.id.bosqueMalditoLayout)
+        val bosqueMaldito = view.findViewById<CardView>(R.id.bosqueMalditoLayout)
         bosqueMaldito.setOnClickListener {
             val nombre = Pantalla2Args.fromBundle(requireArguments()).nombre
             view.findNavController().navigate(Pantalla2Directions.actionPantalla2ToBosqueMaldito(nombre))
         }
-        val mansionMisteriosa = view.findViewById<LinearLayout>(R.id.mansionMisteriosaLayout)
+        val mansionMisteriosa = view.findViewById<CardView>(R.id.mansionMisteriosaLayout)
         mansionMisteriosa.setOnClickListener {
             val nombre = Pantalla2Args.fromBundle(requireArguments()).nombre
             view.findNavController().navigate(Pantalla2Directions.actionPantalla2ToMansionMisteriosa(nombre))
