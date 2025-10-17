@@ -2,4 +2,6 @@
     <string name="app_name">Frame Layout</string>
     <string name="ourense">Ourense</string>
     <string name="santiago">Santiago</string>
+    <string name="ourense_desc">Ciudad gallega de Oursense</string>
+    <string name="santiago_desc">Capital de Galicia</string>
 </resources>
