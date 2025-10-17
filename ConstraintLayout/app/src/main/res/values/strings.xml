@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Constraint Layout</string>
     <string name="iniciar_sesion">Iniciar Sesion</string>
+    <string name="Header">UD02_ConstraintLayout_Practica</string>
 </resources>
