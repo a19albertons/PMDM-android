@@ -13,7 +13,8 @@
         android:layout_width="149dp"
         android:layout_height="67dp"
         android:layout_weight="1"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        android:src="@drawable/foto"/>
 
     <FrameLayout
         android:layout_width="148dp"
