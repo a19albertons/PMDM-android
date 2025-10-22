@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- App / Onboarding backgrounds -->
+    <color name="onboarding_purple">#9c27b0</color>
+    <color name="onboarding_green">#4caf50</color>
+    <color name="onboarding_cyan">#00bcd4</color>
+
+    <!-- Buttons -->
+    <color name="button_yellow">#ffeb3b</color>
+    <color name="button_amber">#ffc107</color>
+
+    <!-- Toolbar -->
+    <color name="toolbar_purple">#6716f6</color>
+</resources>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Fragments</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Toolbar -->
+    <string name="toolbar_title">P2Onboarding</string>
+
+    <!-- Onboarding texts -->
+    <string name="onboarding0_text">God n\'hi do!</string>
+    <string name="onboarding0_start">START</string>
+    <string name="onboarding0_skip">Skip</string>
+
+    <string name="onboarding1_text">!Discover the garlic soup!</string>
+    <string name="onboarding1_next">NEXT</string>
+    <string name="onboarding1_skip">Skip</string>
+
+    <string name="onboarding2_text">!Blow and make bottles!</string>
+    <string name="onboarding2_finish">Finish</string>
+
+    <!-- Image content descriptions for accessibility -->
+    <string name="onboarding0_image_desc">Onboarding image 0</string>
+    <string name="onboarding1_image_desc">Onboarding image 1</string>
+    <string name="onboarding2_image_desc">Onboarding image 2</string>
+</resources>
