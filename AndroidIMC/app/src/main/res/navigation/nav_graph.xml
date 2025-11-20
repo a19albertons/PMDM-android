@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/imcCalculatorFragment">
+
+    <fragment
+        android:id="@+id/imcCalculatorFragment"
+        android:name="com.example.androidimc.ImcCalculatorFragment"
+        android:label="fragment_imc_calculator"
+        tools:layout="@layout/fragment_imc_calculator" >
+        <action
+            android:id="@+id/action_imcCalculatorFragment_to_resultIMCFragment"
+            app:destination="@id/resultIMCFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/resultIMCFragment"
+        android:name="com.example.androidimc.ResultIMCFragment"
+        android:label="fragment_result_i_m_c"
+        tools:layout="@layout/fragment_result_i_m_c" >
+        <action
+            android:id="@+id/action_resultIMCFragment_to_imcCalculatorFragment"
+            app:destination="@id/imcCalculatorFragment" />
+        <argument
+            android:name="altura"
+            app:argType="integer" />
+        <argument android:name="peso"
+            app:argType="integer" />
+        <argument
+            android:name="edad"
+            app:argType="integer" />
+    </fragment>
+</navigation>
