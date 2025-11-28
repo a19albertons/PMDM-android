@@ -3,12 +3,11 @@ package com.example.calculadoravelocidadmedia
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 import com.example.calculadoravelocidadmedia.databinding.ActivityMainBinding
 
@@ -17,8 +16,7 @@ class MainActivity : AppCompatActivity() {
     private val binding: ActivityMainBinding
         get() = _binding!!
 
-    private val kilometros = MutableLiveData<String>("0")
-    private val horas = MutableLiveData<String>("0")
+    val model: CalculadoraModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.cantidadKm.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
-                kilometros.value = s?.toString() ?: "0"
+                model.kilometros.value = s?.toString() ?: "0"
             }
 
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
@@ -47,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.cantidadHoras.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
-                horas.value = s?.toString() ?: "0"
+                model.horas.value = s?.toString() ?: "0"
             }
 
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
@@ -60,8 +58,8 @@ class MainActivity : AppCompatActivity() {
         })
 
         val observer = Observer<String> {
-            val km = kilometros.value?.toIntOrNull() ?: 0
-            val h = horas.value?.toIntOrNull() ?: 0
+            val km = model.kilometros.value?.toIntOrNull() ?: 0
+            val h = model.horas.value?.toIntOrNull() ?: 0
             if (h!=0) {
                 val kmPorHora = km/h
                 val mPorSegundo = (km*1000)/(h*3600)
@@ -77,8 +75,8 @@ class MainActivity : AppCompatActivity() {
 
             }
         }
-        kilometros.observe(this, observer)
-        horas.observe(this, observer)
+        model.kilometros.observe(this, observer)
+        model.horas.observe(this, observer)
 
     }
 }
