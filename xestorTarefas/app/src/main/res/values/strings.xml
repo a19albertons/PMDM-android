@@ -2,4 +2,24 @@
     <string name="app_name">xestorTarefas</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_field_name_empty">El campo nombre esta vacio</string>
+    <string name="error_field_priority_empty">El campo de prioridad esta vacio</string>
+    <string name="priority_high">alto</string>
+    <string name="priority_medium">medio</string>
+    <string name="priority_low">baixo</string>
+    <string name="task_added_success">Tareas añadida con exito. Actualmente hay: %d</string>
+    <string name="total_tasks">Total tarefas: %d</string>
+    <string name="total_completed_tasks">Total tarefas completadas: %d</string>
+    <string name="total_high_priority_tasks">Total tarefas prioridade alta: %d</string>
+    <string name="total_medium_priority_tasks">Total tarefas prioridade media: %d</string>
+    <string name="total_low_priority_tasks">Total tarefas prioridade baixa: %d</string>
+    <string name="add_task">añadir</string>
+    <string name="task_name_hint">Nombre de la tarea</string>
+    <string name="app_title">Tareas</string>
+    <string name="nav_add_task">Engadir Tarefa</string>
+    <string name="nav_list_tasks">Lista de Tarefas</string>
+    <string name="nav_summary">Resumo</string>
+    <string name="menu_add_task">Engadir</string>
+    <string name="menu_list_tasks">Lista</string>
+    <string name="menu_summary">Resumo</string>
 </resources>

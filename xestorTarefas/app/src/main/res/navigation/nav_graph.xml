@@ -8,16 +8,16 @@
     <fragment
         android:id="@+id/engadeTarefasFragment"
         android:name="com.example.xestortarefas.EngadeTarefasFragment"
-        android:label="fragment_engade_tarefas"
+        android:label="@string/nav_add_task"
         tools:layout="@layout/fragment_engade_tarefas" />
     <fragment
         android:id="@+id/listaTarefasFragment"
         android:name="com.example.xestortarefas.ListaTarefasFragment"
-        android:label="fragment_lista_tarefas"
+        android:label="@string/nav_list_tasks"
         tools:layout="@layout/fragment_lista_tarefas" />
     <fragment
         android:id="@+id/resumoTarefasFragment"
         android:name="com.example.xestortarefas.ResumoTarefasFragment"
-        android:label="fragment_resumo_tarefas"
+        android:label="@string/nav_summary"
         tools:layout="@layout/fragment_resumo_tarefas" />
 </navigation>

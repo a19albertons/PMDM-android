@@ -32,11 +32,11 @@ class ResumoTarefasFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.totalTarefas.text = "Total tarefas: "+model.tarefasTotal().toString()
-        binding.totalTarefasCompletadas.text = "Total tarefas completadas: "+model.tarefasTotalCompletadas().toString()
-        binding.totalTarefasPrioridadeAlta.text = "Total tarefas prioridade alta: "+model.tarefasPrioridadeAlta()
-        binding.totalTarefasPrioridadeMedia.text = "Total tarefas prioridade media: "+model.tarefasPrioridadeMedia()
-        binding.totalTarefasPrioridadeBaixa.text = "Total tarefas prioridade baixa: "+model.tarefasPrioridadeBaixa()
+        binding.totalTarefas.text = getString(R.string.total_tasks, model.tarefasTotal())
+        binding.totalTarefasCompletadas.text = getString(R.string.total_completed_tasks, model.tarefasTotalCompletadas())
+        binding.totalTarefasPrioridadeAlta.text = getString(R.string.total_high_priority_tasks, model.tarefasPrioridadeAlta())
+        binding.totalTarefasPrioridadeMedia.text = getString(R.string.total_medium_priority_tasks, model.tarefasPrioridadeMedia())
+        binding.totalTarefasPrioridadeBaixa.text = getString(R.string.total_low_priority_tasks, model.tarefasPrioridadeBaixa())
     }
 
     override fun onDestroyView() {

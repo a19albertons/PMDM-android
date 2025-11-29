@@ -32,7 +32,7 @@ class FilaAdapater(private val onCheckChange: (Int, Boolean) -> Unit  ):
     override fun onBindViewHolder(holder: TareaViewHolder, position: Int) {
         val currentItem = getItem(position)
         holder.nombre.text = currentItem.getNomeKt()
-        holder.prioridade.text = intToText(currentItem.getPrioridadeKt())
+        holder.prioridade.text = intToText(currentItem.getPrioridadeKt(), holder.itemView.context)
 
         holder.completada.setOnClickListener(null)
         holder.completada.isChecked = currentItem.getCompletadaKt()
@@ -44,15 +44,13 @@ class FilaAdapater(private val onCheckChange: (Int, Boolean) -> Unit  ):
         }
     }
 
-    fun intToText(valor : Int) : String {
-        var String = ""
-        when (valor) {
-            3 -> String = "alto"
-            2 -> String = "medio"
-            1 -> String = "baixo"
-            else -> String = "baixo"
+    fun intToText(valor : Int, context: android.content.Context) : String {
+        return when (valor) {
+            3 -> context.getString(R.string.priority_high)
+            2 -> context.getString(R.string.priority_medium)
+            1 -> context.getString(R.string.priority_low)
+            else -> context.getString(R.string.priority_low)
         }
-        return String
     }
 
     companion object {

@@ -33,13 +33,13 @@ class EngadeTarefasFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.enviar.setOnClickListener {
             if (binding.nombreTarea.text.toString().trim() == "") {
-                binding.errores.text = "El campo nombre esta vacio"
+                binding.errores.text = getString(R.string.error_field_name_empty)
 
                 // Condicional excepcional
                 return@setOnClickListener
             }
             if (binding.prioridades.checkedChipId == View.NO_ID) {
-                binding.errores.text = "El campo de prioridad esta vacio"
+                binding.errores.text = getString(R.string.error_field_priority_empty)
 //                binding.errores.text = binding.prioridades.checkedChipId.toString()
 
                 // Condicional excepcional
@@ -50,17 +50,17 @@ class EngadeTarefasFragment : Fragment() {
 //            binding.errores.text = binding.prioridades.checkedChipId.toString()
             var texto = ""
             if (binding.alto.isChecked) {
-                texto = "alto"
+                texto = getString(R.string.priority_high)
             }
             else if (binding.medio.isChecked) {
-                texto = "medio"
+                texto = getString(R.string.priority_medium)
             }
             else if (binding.baixo.isChecked) {
-                texto = "baixo"
+                texto = getString(R.string.priority_low)
             }
             model.anadirTarea(texto,binding.nombreTarea.text.toString())
 //            binding.errores.text = model.tarefasTotal().toString()
-            binding.errores.text = "Tareas añadida con exito. Actualmente hay: "+model.tarefasTotal()
+            binding.errores.text = getString(R.string.task_added_success, model.tarefasTotal())
         }
     }
 

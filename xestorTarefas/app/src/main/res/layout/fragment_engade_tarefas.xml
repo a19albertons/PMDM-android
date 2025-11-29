@@ -11,7 +11,7 @@
         android:id="@+id/nombreTarea"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre de la tarea"
+        android:hint="@string/task_name_hint"
 
         />
     <com.google.android.material.chip.ChipGroup
@@ -24,21 +24,21 @@
             android:id="@+id/alto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="alto"
+            android:text="@string/priority_high"
             style="@style/Widget.MaterialComponents.Chip.Choice"
             />
         <com.google.android.material.chip.Chip
             android:id="@+id/medio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="medio"
+            android:text="@string/priority_medium"
             style="@style/Widget.MaterialComponents.Chip.Choice"
             />
         <com.google.android.material.chip.Chip
             android:id="@+id/baixo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="baixo"
+            android:text="@string/priority_low"
             style="@style/Widget.MaterialComponents.Chip.Choice"
 
             />
@@ -47,7 +47,7 @@
         android:id="@+id/enviar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="añadir"
+        android:text="@string/add_task"
         />
     <TextView
         android:id="@+id/errores"

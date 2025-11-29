@@ -5,21 +5,21 @@
     <item
         android:id="@+id/engadeTarefasFragment"
         android:icon="@drawable/anadir"
-        android:title="engade"
+        android:title="@string/menu_add_task"
         app:showAsAction="always">
 
     </item>
     <item
         android:id="@+id/listaTarefasFragment"
         android:icon="@drawable/listar"
-        android:title="lista"
+        android:title="@string/menu_list_tasks"
         app:showAsAction="always">
 
     </item>
     <item
         android:id="@+id/resumoTarefasFragment"
         android:icon="@drawable/resumen"
-        android:title="resumo"
+        android:title="@string/menu_summary"
         app:showAsAction="always">
 
     </item>
