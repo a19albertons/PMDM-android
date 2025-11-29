@@ -44,7 +44,6 @@ class ListaTarefasFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
         val adapter = FilaAdapater(
-            tareas,
             onCheckChange = { posicion, nuevoEstado ->
                 // Le decimos al ViewModel: "Cambia el estado del ítem en la fila 'posicion'"
                 model.marcoDesmarco(posicion, nuevoEstado)
@@ -58,9 +57,7 @@ class ListaTarefasFragment : Fragment() {
             // Usamos 'post' para asegurar que el RecyclerView no esté ocupado
             // calculando el layout cuando le mandamos actualizar.
             binding.filaRecyclerView.post {
-                (binding.filaRecyclerView.adapter as? FilaAdapater)?.actualizarLista(
-                    tareasActualizadas as MutableList<Tarea>
-                )
+                (binding.filaRecyclerView.adapter as? FilaAdapater)?.submitList(tareasActualizadas)
             }
         }
 
