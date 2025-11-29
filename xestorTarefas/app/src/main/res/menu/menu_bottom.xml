@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/engadeTarefasFragment"
+        android:icon="@drawable/anadir"
+        android:title="engade"
+        app:showAsAction="always">
+
+    </item>
+    <item
+        android:id="@+id/listaTarefasFragment"
+        android:icon="@drawable/listar"
+        android:title="lista"
+        app:showAsAction="always">
+
+    </item>
+    <item
+        android:id="@+id/resumoTarefasFragment"
+        android:icon="@drawable/resumen"
+        android:title="resumo"
+        app:showAsAction="always">
+
+    </item>
+</menu>

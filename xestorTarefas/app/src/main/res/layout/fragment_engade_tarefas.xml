@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".EngadeTarefasFragment">
+
+    <EditText
+        android:id="@+id/nombreTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de la tarea"
+
+        />
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/prioridades"
+        android:layout_width="wrap_content"
+        app:singleSelection="true"
+        android:layout_height="wrap_content"
+        >
+        <com.google.android.material.chip.Chip
+            android:id="@+id/alto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="alto"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/medio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="medio"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/baixo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="baixo"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+
+            />
+    </com.google.android.material.chip.ChipGroup>
+    <Button
+        android:id="@+id/enviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="añadir"
+        />
+    <TextView
+        android:id="@+id/errores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+
+</LinearLayout>

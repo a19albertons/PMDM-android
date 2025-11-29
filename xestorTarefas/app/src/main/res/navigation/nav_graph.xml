@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/engadeTarefasFragment">
+
+    <fragment
+        android:id="@+id/engadeTarefasFragment"
+        android:name="com.example.xestortarefas.EngadeTarefasFragment"
+        android:label="fragment_engade_tarefas"
+        tools:layout="@layout/fragment_engade_tarefas" />
+    <fragment
+        android:id="@+id/listaTarefasFragment"
+        android:name="com.example.xestortarefas.ListaTarefasFragment"
+        android:label="fragment_lista_tarefas"
+        tools:layout="@layout/fragment_lista_tarefas" />
+    <fragment
+        android:id="@+id/resumoTarefasFragment"
+        android:name="com.example.xestortarefas.ResumoTarefasFragment"
+        android:label="fragment_resumo_tarefas"
+        tools:layout="@layout/fragment_resumo_tarefas" />
+</navigation>
