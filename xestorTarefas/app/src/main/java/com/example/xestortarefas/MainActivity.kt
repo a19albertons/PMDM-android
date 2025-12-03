@@ -26,14 +26,19 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        // Hace que se muestre la toolbar
         val toolbar = findViewById<MaterialToolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
 
+        // solicita el botton nanigation view
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
 
+        // Crea el nav controller
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
 
+        // Hace que se muestre el navitagion view correctamente
         bottomNav.setupWithNavController(navController)
 
 
@@ -41,7 +46,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
+    // Hace que se puedan selecionar item en los menus
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val navController = findNavController(R.id.nav_host_fragment)
         return NavigationUI.onNavDestinationSelected(item, navController) || super.onOptionsItemSelected(item)    }
